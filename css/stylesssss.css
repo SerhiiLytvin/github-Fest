@@ -1,0 +1,521 @@
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+   list-style-type: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+
+}
+
+body {
+   background-color: #F5F5F5;
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   height: 100%;
+   line-height: 1;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   max-width: 1440px;
+   margin: 0px auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.header {
+   position: absolute;
+   z-index: 10;
+}
+
+/* =========== header ============== */
+
+.header__content {
+   padding: 63px 0px 0px 100px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.header__logo {
+   display: block;
+}
+
+.header__nav {
+   display: flex;
+   align-items: center;
+   margin: 0px 0px 0px 590px;
+}
+
+
+.header__list {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.header__list li {
+   font-size: 18px;
+   line-height: 96.9%;
+}
+
+.header__list li:not(:last-child) {
+   margin-right: 56px;
+}
+
+.header__list a {
+   color: #000000;
+}
+
+.header__button {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 96.9%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #000000;
+   padding: 21px 28px;
+   margin-left: 24px;
+   background-color: #7AE5FD;
+   border-radius: 87px;
+}
+
+/* =========== main banner ============== */
+
+.main {
+   flex: 1 1 auto;
+}
+
+.banner {
+   background-image: url(../img/woman-holding-ukranian-flag.png);
+   background-repeat: no-repeat;
+   background-position: top right;
+}
+
+.banner__block {
+   background-color: #F1FDFF;
+   position: relative;
+   z-index: -2;
+}
+
+.banner__content {
+   padding: 200px 0px 153px 100px;
+}
+
+.banner__title {
+   max-width: 698px;
+   position: relative;
+   z-index: -1;
+}
+
+.banner__title h1 {
+   font-weight: 800;
+   font-size: 93px;
+   line-height: 94.9%;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+   color: #9AD2DE;
+}
+
+.banner__text {
+   font-size: 20px;
+   line-height: 120%;
+   color: #000000;
+   width: 484px;
+   margin: 64px 0px 0px 0px;
+}
+
+/* =========== main fest============== */
+
+.fest {
+   background-color: #FFFFFF;
+}
+
+.fest__block {
+   padding: 143px 0px 69px 100px;
+}
+
+.fest__title {
+   text-align: center;
+}
+
+.fest__title-title {
+   font-size: 60px;
+   line-height: 120%;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+   color: #000000;
+   margin: 0px 0px 2px 0px;
+}
+
+.fest__title-subtitle {
+   font-size: 27px;
+   line-height: 120%;
+   text-align: center;
+   color: #000000;
+   margin: 0px 0px 10px 0px;
+}
+
+.fest__title-text {
+   font-size: 20px;
+   line-height: 120%;
+   text-align: center;
+   color: #73A6B1;
+   max-width: 588px;
+   margin: 0 auto;
+}
+
+/* =========== main scene ============== */
+
+.scene__victory {
+   padding: 0px 100px 65px 100px;
+}
+
+.scene__music {
+   padding: 0px 100px 72px 100px;
+}
+
+.scene__children {
+   padding: 0px 100px 71px 100px;
+}
+
+.scene {
+   background-color: #FFFFFF;
+}
+
+.scene__block {
+   background-color: #F1FDFF;
+   padding: 40px 40px 40px 40px;
+   margin: 0 auto;
+}
+
+.scene__container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.scene__header {
+   margin: 0px 0px 45px 0px;
+}
+
+.scene__header-title {
+   font-size: 46px;
+   line-height: 120%;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+   color: #000000;
+   margin: 0px 0px 10px 0px;
+}
+
+.scene__header-subtitle {
+   font-size: 20px;
+   line-height: 120%;
+   color: #000000;
+}
+
+.scene__list> :not(:last-child) {
+   margin: 0px 0px 35px 0px;
+}
+
+.scene__agenda-text {
+   font-size: 16px;
+   line-height: 120%;
+   color: #000000;
+   margin: 0px 0px 10px 0px;
+}
+
+.scene__agenda-time {
+   font-size: 16px;
+   line-height: 120%;
+   color: #3D8C9D;
+}
+
+/* =========== main learn more ============== */
+
+.learnMore {
+   background-color: #FFFFFF;
+   padding: 0px 0px 43px 0px;
+}
+
+.learnMore__button {
+   background-color: #7AE5FD;
+   border-radius: 87px;
+   padding: 21px 35px;
+   font-size: 18px;
+   line-height: 120%;
+   text-transform: uppercase;
+   color: #000000;
+   display: block;
+   margin: 0 auto;
+}
+
+/* =========== main presents ============== */
+
+.presents {
+   background-color: #FFFFFF;
+   padding: 0px 83px 0px 72px;
+}
+
+.present__block {
+   padding: 270px 18px 191px 28px;
+   background-image: url(../img/background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+.presents__innerBlock {
+   padding: 90px 0px 90px 40px;
+   background-color: #F2FEFF;
+}
+
+.presents__text {
+   max-width: 391px;
+   font-size: 27.271px;
+   line-height: 120%;
+   color: #000000;
+}
+
+.present__tshort-image img {
+   position: absolute;
+   top: 189px;
+   left: 672px;
+   object-fit: cover;
+}
+
+.present__flag-image img {
+   position: absolute;
+   top: 284px;
+   left: 907px;
+   object-fit: cover;
+}
+
+/* =========== main charity ============== */
+
+.charity {
+   background-color: #FFFFFF;
+   padding: 68px 0px 141px;
+}
+
+.charity__info {
+   max-width: 739px;
+   margin: 0 auto 57px;
+}
+
+.charity__title {
+   font-size: 60px;
+   line-height: 120%;
+   text-align: center;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+   color: #000000;
+   margin: 0px 0px 5px 0px;
+}
+
+.charity__subtitle {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 120%;
+   text-align: center;
+   color: #73A6B1;
+}
+
+.charity__purpose {
+   padding: 77px 0px 0px 0px;
+   max-width: 439px;
+   margin: 0 auto;
+}
+
+.purpose__text {
+   font-size: 27px;
+   line-height: 120%;
+   text-align: center;
+   color: #000000;
+   margin: 0px 0px 17px 0px;
+}
+
+.current__summa {
+   display: flex;
+   margin: 0 auto;
+}
+
+.current__summa-digits {
+   font-size: 60px;
+   line-height: 120%;
+   text-align: right;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+   color: #000000;
+   width: 132px;
+   padding: 0px 13px;
+}
+
+.digits-border {
+   border-left: 2px solid #9AD2DE;
+   border-right: 2px solid #9AD2DE;
+}
+
+.charity__button {
+   display: block;
+   font-size: 18px;
+   line-height: 120%;
+   text-transform: uppercase;
+   color: #000000;
+   padding: 21px 35px;
+   border-radius: 87px;
+   background-color: #7AE5FD;
+   margin: 0 auto;
+}
+
+/* =========== main contacts ============== */
+
+.contacts {
+   background-color: #F9FADF;
+   padding: 57px 307px 101px 100px;
+}
+
+.contacts__block {
+   display: flex;
+}
+
+.contacts__header {
+   width: 58%;
+}
+
+.contacts__title {
+   font-size: 60px;
+   line-height: 120%;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+   color: #000000;
+}
+
+.contacts__info {
+   width: 42%;
+}
+
+.contacts__content {
+   font-size: 20px;
+   line-height: 120%;
+   color: #000000;
+   max-width: 440px;
+   margin: 0px 0px 57px 0px;
+}
+
+.contacts__content-icon {
+   margin: 0px 0px 9px 0px;
+}
+
+.contacts__content-telephone {
+   font-weight: 700;
+}
+
+.contacts__icons {
+   margin: 0px 0px 5px 0px;
+}
+
+.contacts__icons :not(:last-child) {
+   margin: 0px 16px 0px 0px;
+}
+
+.contacts__info-text {
+   font-size: 20px;
+   line-height: 120%;
+   color: #000000;
+}
+
+/* =========== main subscription ============== */
+
+.subscription {
+   padding: 0px 97px 0px 100px;
+   background-color: #F9FADF;
+}
+
+.subscription__block {
+   background-color: #FFFFFF;
+   display: flex;
+   padding: 0px 0px 54px 0px;
+}
+
+.subsctiption__email {
+   padding: 37px 89px 0px 39px;
+}
+
+.subsctiption__email-image img {
+   object-fit: cover;
+   max-width: 508px;
+}
+
+.subscription__content {
+   max-width: 506px;
+}
+
+.subscription__text {
+   padding: 54px 0px 0px 0px;
+}
+
+.subscription__text-text {
+   max-width: 455px;
+   font-size: 27px;
+   line-height: 120%;
+   color: #000000;
+   margin: 0px 0px 39px 0px;
+}
+
+.subscription__form input {
+   font-size: 20px;
+   line-height: 120%;
+   color: #000000;
+
+   padding: 21px 400px 21px 43px;
+   background-color: #F9FADF;
+   border-radius: 61px;
+
+   width: 100%;
+}
+
+.subscription__form :not(:last-child) {
+   margin: 0px 0px 31px 0px;
+}
+
+.subscription__form-btn {
+   display: block;
+   padding: 22px 0;
+   width: 506px;
+
+   background-color: #7AE5FD;
+   border-radius: 61px;
+
+   font-size: 18px;
+   line-height: 120%;
+   text-transform: uppercase;
+   color: #000000;
+}
